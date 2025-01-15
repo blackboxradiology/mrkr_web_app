@@ -5,7 +5,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
   const name = document.getElementById("name").value;
 
   try {
-    const response = await fetch("https://nlw8cqdysj.execute-api.us-east-2.amazonaws.com/MRKR_registration_stage", {
+    const response = await fetch("https://nlw8cqdysj.execute-api.us-east-2.amazonaws.com/MRKR_registration_stage/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
