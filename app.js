@@ -24,3 +24,24 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
     document.getElementById("responseMessage").textContent = `Error: ${error.message}`;
   }
 });
+
+
+document.getElementById("testS3Access").addEventListener("click", async () => {
+  try {
+    const response = await fetch(
+      "https://nlw8cqdysj.execute-api.us-east-2.amazonaws.com/MRKR_registration_stage/TestS3Access", 
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({}),
+      }
+    );
+
+    const result = await response.json();
+    alert(result.message);
+  } catch (error) {
+    alert("Error testing S3 access: " + error.message);
+  }
+});
