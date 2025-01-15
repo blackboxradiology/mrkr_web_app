@@ -29,7 +29,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
 document.getElementById("testS3Access").addEventListener("click", async () => {
   try {
     const response = await fetch(
-      "https://nlw8cqdysj.execute-api.us-east-2.amazonaws.com/MRKR_registration_stage/TestS3Access", 
+      "https://nlw8cqdysj.execute-api.us-east-2.amazonaws.com/TestS3Access",
       {
         method: "POST",
         headers: {
