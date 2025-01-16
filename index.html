@@ -31,7 +31,25 @@
     }
   </style>
 </head>
+  
 <body>
+
+  <div>
+    <!-- Sign-In Button -->
+    <button id="signIn">Sign In</button>
+
+    <!-- Sign-Out Button -->
+    <button id="signOut">Log out</button>
+</div>
+
+<div>
+    <!-- Display User Information -->
+    <h3>Hello, <span id="email"></span></h3>
+    <p>Access Token: <pre id="access-token"></pre></p>
+    <p>ID Token: <pre id="id-token"></pre></p>
+    <p>Refresh Token: <pre id="refresh-token"></pre></p>
+</div>
+<br><br>
   <h1>User Registration</h1>
   <form id="registerForm">
     <input type="email" id="email" placeholder="Enter your email" required />
